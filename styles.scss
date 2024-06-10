@@ -1,6 +1,7 @@
 /* styles.css */
 
-@import url("media.css");
+@import "media.scss";
+@import "preview.scss";
 
 * {
     box-sizing: border-box;
