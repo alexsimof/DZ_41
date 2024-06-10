@@ -91,8 +91,8 @@ const renderNotFound = () => {
 export {
     createPreviewItem,
     createTile,
+    renderMediaInfo, 
+    renderMainComponent, 
     movieNotFound,
-    renderMainComponent,
-    renderMediaInfo,
-    renderNotFound,
+    renderNotFound, 
 };

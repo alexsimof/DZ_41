@@ -2,14 +2,14 @@
 import { debounce } from "./helpers/debounce.js"
 import { createPreviewUrl, createDetailedInfoUrl } from "./helpers/urls.js"
 import {
-    createTile,
     createPreviewItem,
+    createTile,
     renderMediaInfo,
     renderMainComponent,
     renderNotFound,
 } from "./components.js";
 import { createCollectionList } from "./helpers/createCollectionList.js";
-import { getSearchElement, getPostersContainer, getPreviewList } from "./helpers/getElements.js";
+import { getSearchElement, getPreviewList, getPostersContainer } from "./helpers/getElements.js";
 
 
 
@@ -110,7 +110,7 @@ function showMediaPage() {
     }
 }
 
-function handleReturnToHome(event) {
+function handleReturnToHome() {
     history.pushState(null, null, `/`);
     renderMainPage();
 }
@@ -128,6 +128,8 @@ async function renderMediaPage() {
         renderNotFound()
     }
 }
+
+
 
 function renderMainPage() {
     renderMainComponent()
